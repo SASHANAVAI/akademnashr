@@ -1,0 +1,82 @@
+.nav-links{
+  text-decoration: none;
+  text-transform: uppercase;
+  /* font-style: bold; */
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0.5px;
+  color: black;
+}
+.reg-btn{
+  /* width: 155px;
+  height: 39px;  linkda w h ishlamaydi bacho*/
+  text-decoration: none;
+  font-style: bold;
+  /* text-transform: uppercase; */
+  color:white;
+  background:#FF7500;
+  ;
+}
+.promo-page{
+  background: #252420;
+}
+.promo-heading{
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  color: #fff;
+}
+.promo-paragraph{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color:white;
+}
+.keypoints{
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 120%;
+  color: #000;
+}
+.skills-desc{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000;
+}
+.skill-header{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  columns: #000;
+}
+.sale-page{
+ background-color: #252420;
+}
+.sale-header{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  color: #fff;
+}
+.sale-paragraph{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #fff;
+}
+strong{
+  color:#FF7500
+}
+.footer-link{
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #252420;
+}
+li{
+  justify-items: center;
+}
