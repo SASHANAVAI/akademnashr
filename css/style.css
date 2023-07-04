@@ -8,7 +8,7 @@
   letter-spacing: 0.5px;
   color: black;
 }
-.reg-btn{
+.main-btn{
   /* width: 155px;
   height: 39px;  linkda w h ishlamaydi bacho*/
   text-decoration: none;
@@ -16,52 +16,77 @@
   /* text-transform: uppercase; */
   color:white;
   background:#FF7500;
-  ;
 }
-.promo-page{
+.hero{
   background: #252420;
+  color: white;
 }
-.promo-heading{
+.hero-div{
+  width: 390px;
+}
+.hero-header{
+  width: 340px;
   font-weight: 700;
   font-size: 40px;
   line-height: 120%;
-  color: #fff;
 }
-.promo-paragraph{
+.hero-text{
+  width: 390px;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color:white;
+  letter-spacing: 0.5px;
 }
-.keypoints{
+.orange-line{
+  width: 80px;
+  height: 3px;
+  background-color: #FF7500;
+}
+.features{
+  color: #000;
+}
+.decoration-icon{
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255, 117, 0, 0.2);
+}
+.features-heading{
   font-weight: 700;
   font-size: 72px;
-  line-height: 120%;
-  color: #000;
+  letter-spacing: 0.5px;
+  line-height: 1.2;
 }
-.skills-desc{
+.features-item{
+  width: 340px;
+}
+.features-text{
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: #000;
+  letter-spacing: 0.5px;
 }
-.skill-header{
+.features-title{
   font-weight: 700;
   font-size: 24px;
   line-height: 120%;
-  columns: #000;
+  letter-spacing: 0.5px;
 }
-.sale-page{
+.promo{
  background-color: #252420;
+ color: #fff;
 }
-.sale-header{
+.promo-box{
+  width: 440px;
+}
+.promo-heading{
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 120%;
   color: #fff;
 }
-.sale-paragraph{
+.promo-text{
+  width: 440px;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
@@ -70,13 +95,29 @@
 strong{
   color:#FF7500
 }
-.footer-link{
+
+.site-footer li{
+  list-style: none;
+}
+.footer-links{
+  width: 224px;
+}
+.footer-links a{
   text-decoration: none;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #252420;
 }
-li{
-  justify-items: center;
+.promo-img{
+  width: 440px;
+  height: 440px;
+}
+.site-footer{
+  background-color: #f8f8f8;
+}
+
+.footer-line{
+  height: 2px;
+  background-color: rgba(37, 36, 32, 0.5);
 }
