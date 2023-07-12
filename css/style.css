@@ -3,31 +3,75 @@ body{
   line-height: 24px;
   font-size: 16px;
   color: #000000;
-  text-decoration: none;
 }
-.nav-links{
 
+
+ /* HEADER  */
+
+.wrap-header{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.wrap-nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-links{
+  display: flex;
+  list-style: none;
+}
+
+.nav-link{
+  text-decoration: none;
   text-transform: uppercase;
-  /* font-style: bold; */
   font-size: 13px;
   font-weight: 500;
   line-height: 15px;
   letter-spacing: 0.5px;
   color: black;
 }
+
+.nav-link:hover{
+  color: #ff7500;
+
+}
+
+/* .nav-link{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0.5px;
+  color: black;
+} */
 .main-btn{
-  /* width: 155px;
-  height: 39px;  linkda w h ishlamaydi bacho*/
+  text-decoration: none;
   font-style: bold;
-  /* text-transform: uppercase; */
   color:white;
   background:#FF7500;
 }
+
+.main-btn:hover{
+  opacity: 60%;
+}
+
+ /*     HERO      */
 .hero{
   background: #252420;
   color: white;
 }
-.hero-div{
+
+.wrap-hero{
+  display: flex;
+  justify-content: space-around;
+}
+
+.hero-action{
+  align-items: start;
   width: 390px;
 }
 .hero-header{
@@ -43,46 +87,70 @@ body{
   line-height: 150%;
   letter-spacing: 0.5px;
 }
+
 .orange-line{
   width: 80px;
   height: 3px;
   background-color: #FF7500;
 }
+
+
+/* FEATURES SECTION */
+
 .features{
   color: #000;
 }
-.decoration-icon{
-  width: 100px;
-  height: 100px;
-  background-color: rgba(255, 117, 0, 0.2);
-}
+
 .features-heading{
   font-weight: 700;
   font-size: 72px;
   letter-spacing: 0.5px;
   line-height: 1.2;
 }
+
+.features-list{
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+.decoration-icon{
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255, 117, 0, 0.2);
+}
+
+
 .features-item{
   width: 340px;
 }
+
 .features-text{
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.5px;
 }
+
 .features-title{
   font-weight: 700;
   font-size: 24px;
   line-height: 120%;
   letter-spacing: 0.5px;
 }
+ /*  PROMO SECTION  */
 .promo{
  background-color: #252420;
  color: #fff;
 }
-.promo-box{
+
+.promo-textbox{
   width: 440px;
+}
+.wrap-promo{
+  display: flex;
+  justify-content: space-around;
+
 }
 .promo-heading{
   font-style: normal;
@@ -91,6 +159,7 @@ body{
   line-height: 120%;
   color: #fff;
 }
+
 .promo-text{
   width: 440px;
   font-weight: 400;
@@ -98,27 +167,57 @@ body{
   line-height: 150%;
   color: #fff;
 }
+
 strong{
   color:#FF7500
 }
 
-.site-footer li{
+/*   FOOTER  */
+
+.footer-top{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-top ul{
+  display: flex;
+}
+.footer-top ul li{
+  list-style-type: none;
+}
+
+.footer-top ul li a:hover{
+  color: #ff7500;
+}
+.wrap-links{
+  display: flex;
+  justify-content: space-around;
+}
+.site-footer{
+  text-decoration: none;
   list-style: none;
 }
 .footer-links{
+  list-style-type: none;
   width: 224px;
 }
-.footer-links a{
 
+.footer-links a{
+  text-decoration: none;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #252420;
 }
+
+.footer-links a:hover{
+  color: #ff7500;
+}
 .promo-img{
   width: 440px;
   height: 440px;
 }
+
 .site-footer{
   background-color: #f8f8f8;
 }

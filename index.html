@@ -8,40 +8,44 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Header -->
+  <!-- HEADER -->
   <header>
-    <div>
-      <a href="index.html"><img src="img/logo.svg" alt="Akademnashr logosi" width="227" height="60"></a>
+    <div class="wrap-header">
+        <a href="index.html"><img src="img/logo.svg" alt="Akademnashr logosi" width="227" height="60"></a>
+      <div class="wrap-nav">
+        <nav>
+          <ul class="navbar-links">
+            <li><a class="nav-link" href="#">Bosh sahifa</a></li>
+            <li><a class="nav-link" href="#">Kitoblar</a></li>
+            <li><a class="nav-link" href="#">Aksiyalar</a></li>
+            <li><a class="nav-link" href="#">Kontaktlar</a></li>
+          </ul>
+        </nav>
+        <a class="main-btn" href="#">Ro'yxatdan o'tish</a>
+      </div>
     </div>
-    <nav>
-      <ul class="navbar">
-        <li><a class="nav-links" href="#">Bosh sahifa</a></li>
-        <li><a class="nav-links" href="#">Kitoblar</a></li>
-        <li><a class="nav-links" href="#">Aksiyalar</a></li>
-        <li><a class="nav-links" href="#">Kontaktlar</a></li>
-      </ul>
-    </nav>
-    <a class="-main-btn" href="#">Ro'yxatdan o'tish</a>
   </header>
 
   <!-- Hero -->
   <main>
 
     <section class="hero">
-      <div class="hero-div">
-        <hr class="orange-line">
-        <h2 class="hero-header">Pythonda dasturlash asoslari</h2>
-        <p class="hero-text">Dasturlash asoslariga oid o'zbek tilidagi ilk eng mukammal qo'llanma. Kitobning har bir bo'limi uchun maxsus video darslar yozilgan bo'lib, ularga kitobda ko'rsatilgan QR kod orqali o'tish mumkin.</p>
-        <a class="main-btn" href="#">Buyurtma berish</a>
+      <div class="wrap-hero">
+        <div class="hero-action">
+          <hr class="orange-line">
+          <h2 class="hero-header">Pythonda dasturlash asoslari</h2>
+          <p class="hero-text">Dasturlash asoslariga oid o'zbek tilidagi ilk eng mukammal qo'llanma. Kitobning har bir bo'limi uchun maxsus video darslar yozilgan bo'lib, ularga kitobda ko'rsatilgan QR kod orqali o'tish mumkin.</p>
+          <a class="main-btn" href="#">Buyurtma berish</a>
+        </div>
+        <img src="img/python-book.png" alt="Python kitoblar rasmi" width="510" height="510" srcset="img/python-book.png 1x,img/python-book@2x.png 2x">
       </div>
-      <img src="img/python-book.png" alt="Python kitoblar rasmi" width="510" height="510" srcset="img/python-book.png 1x,img/python-book@2x.png 2x">
     </section>
 
+    <!-- FEATURE-SECTION  -->
 
     <section class="features">
       <hr class="orange-line">
@@ -67,15 +71,18 @@
       </div>
     </section>
 
+    <!-- PROMO-SECTION  -->
 
     <section class="promo">
-      <div class="promo-box">
-        <h2 class="promo-heading">Bolalar kitoblari uchun ajoyib aksiya!</h2>
-        <p class="promo-text">Ertaklar, she'rlar, sarguzasht asarlar, fikrlashni o'stirish uchun turli mashq qo'llanmalari va komikslar.</p>
-        <p class="promo-text">Aksiyadagi eng katta to'plamda <strong>50 ta kitob</strong>ni <strong>350 ming so'm</strong>ga (aslida 383 ming so'm) sotib olishingiz mumkin.</p>
-        <a class="main-btn" href="#">Buyurtma berish</a>
+      <div class="wrap-promo">
+        <div class="promo-textbox">
+          <h2 class="promo-heading">Bolalar kitoblari uchun ajoyib aksiya!</h2>
+          <p class="promo-text">Ertaklar, she'rlar, sarguzasht asarlar, fikrlashni o'stirish uchun turli mashq qo'llanmalari va komikslar.</p>
+          <p class="promo-text">Aksiyadagi eng katta to'plamda <strong>50 ta kitob</strong>ni <strong>350 ming so'm</strong>ga (aslida 383 ming so'm) sotib olishingiz mumkin.</p>
+          <a class="main-btn" href="#">Buyurtma berish</a>
+        </div>
+        <img class="promo-img" src="img/sale-img.png" alt="sotuvdagi kitoblar" width="440" height="440" srcset="img/sale-img.png 1x, img/sale-img@2x.png 2x">
       </div>
-      <img class="promo-img" src="img/sale-img.png" alt="sotuvdagi kitoblar" width="440" height="440" srcset="img/sale-img.png 1x, img/sale-img@2x.png 2x">
     </section>
   </main>
 
@@ -84,7 +91,7 @@
   <!-- Footer  -->
   <footer class="site-footer">
 
-    <div>
+    <div class="footer-top">
       <a href="index.html"><img src="img/logo.svg" alt="Akademnashr logosi" width="227" height="60"></a>
       <ul>
         <li><a href="t.me/sashanavai"><img src="img/icon-telegram.svg" alt="icon-telegram"></a></li>
@@ -95,7 +102,7 @@
 
     <hr class="footer-line">
 
-    <div>
+    <div class="wrap-links">
       <ul class="footer-links">
         <li><a href="#">Bosh sahifa</a></li>
         <li><a href="#">Kitoblar</a></li>
