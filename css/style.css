@@ -1,3 +1,8 @@
+*{
+  box-sizing: border-box;
+}
+
+
 body{
   font-family: "Roboto", "Arial", sans-serif;
   line-height: 24px;
@@ -6,36 +11,49 @@ body{
 }
 
 
+/*   CONTAINER  */
+.container{
+  width: 100%;
+  max-width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
  /* HEADER  */
 
 header{
-  display: flex;
-  justify-content: space-between;
   border-top: 5px solid #ff7500;
 }
-
-.logo{
-  display: block;
-  /* margin-top: 21px; */
+.header-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
-.navbar{
+/* SITE NAVBAR  */
+.site-navbar{
   display: flex;
   justify-content: center;
-  padding-top: 16px;
-  padding-bottom: 16px;
   align-items: center;
 }
-
-.navbar-links{
+.logo img{
+  display: block;
+}
+.navbar-list{
   display: flex;
   list-style: none;
+  padding: 0;
+  margin: 0;
   margin-right: 32px;
 }
-.nav-item{
+.navbar-item{
   margin-right: 32px;
 }
-.nav-item:last-child{
+.navbar-item:last-child{
   margin: 0;
 }
 .nav-link{
@@ -53,31 +71,17 @@ header{
 
 }
 
-.main-btn{
-  display: inline-block;
-  font-weight: 700;
-  border-radius: 4px;
-  font-size: 13px;
-  color:white;
-  padding: 12px 24px;
-  background:#FF7500;
-  transition: opacity 0.4s ease ;
-  text-decoration: none;
-}
 
-.main-btn:hover{
-  opacity: 60%;
-}
 
- /*     HERO      */
+/*     HERO      */
 .hero{
   background: #252420;
   color: white;
 }
 
-.wrap-hero{
+.hero-container{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .hero-action{
@@ -92,7 +96,7 @@ header{
   font-size: 40px;
   line-height: 120%;
   margin: 0;
-  margin-top: 43px;
+  margin-bottom: 24px;
 }
 .hero-text{
   width: 390px;
@@ -100,14 +104,18 @@ header{
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.5px;
-  margin-top: 24px;
+  margin: 0;
   margin-bottom: 32px;
 }
-
+.hero-container img{
+  border-radius: 8px;
+  box-shadow: 24px 24px 0px 0px rgba(255, 117, 0, 0.60);
+}
 .orange-line{
   width: 80px;
   height: 3px;
   margin: 0;
+  margin-bottom: 40px;
   border: none;
   background-color: #FF7500;
 }
@@ -126,14 +134,16 @@ header{
   font-size: 72px;
   letter-spacing: 0.5px;
   line-height: 1.2;
+  margin: 0;
+  margin-bottom: 72px;
 }
 
 .features-list{
   display: flex;
+  justify-content: center;
   padding: 0;
   margin: 0;
   list-style-type: none;
-  margin-top: 72px;
 }
 
 .decoration-icon{
@@ -144,6 +154,8 @@ header{
   justify-content: center;
   border-radius: 50%;
   background-color: rgba(255, 117, 0, 0.2);
+  margin: 0;
+  margin-bottom: 32px;
 }
 
 
@@ -160,6 +172,7 @@ header{
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.5px;
+  margin: 0;
 }
 
 .features-title{
@@ -167,21 +180,28 @@ header{
   font-size: 24px;
   line-height: 120%;
   letter-spacing: 0.5px;
+  margin: 0;
+  margin-bottom: 12px;
 }
+
  /*  PROMO SECTION  */
 .promo{
+  padding-bottom: 160px;
+}
+
+.inner-promo{
   background-color: #252420;
   border-radius: 12px;
   color: #fff;
+  display: flex;
+  justify-content: space-between;
+
 }
 
 .promo-textbox{
   width: 440px;
-}
-.wrap-promo{
-  display: flex;
-  justify-content: space-around;
-
+  margin: 64px 64px;
+  margin-right: 0;
 }
 .promo-heading{
   font-style: normal;
@@ -190,10 +210,10 @@ header{
   line-height: 120%;
   color: #fff;
   margin: 0;
-  margin-top: 64px;
+  margin-bottom: 24px;
 }
 .promo-text-list{
-  margin-top: 24px;
+  margin: 0;
   margin-bottom: 24px;
 }
 .promo-text{
@@ -202,6 +222,8 @@ header{
   font-size: 16px;
   line-height: 150%;
   color: #fff;
+  margin: 0;
+  margin-bottom: 12px;
 }
 
 strong{
@@ -211,7 +233,8 @@ strong{
 /*   FOOTER  */
 
 .site-footer{
-  padding-top: 56px;
+  margin: 0;
+
   padding-bottom: 56px;
   background-color: #f8f8f8;
 }
@@ -219,14 +242,17 @@ strong{
 .footer-top{
   display: flex;
   justify-content: space-between;
-  margin-top: 56px;
-  margin-bottom: 40px;
+  align-items: center;
+  padding-top: 56px;
+  padding-bottom: 40px;
 }
 
 .footer-line{
   height: 2px;
   border: 0;
   background-color: rgba(37, 36, 32, 0.5);
+  margin: 0;
+  margin-bottom: 64px;
 }
 .social-links{
   display: flex;
@@ -251,7 +277,7 @@ strong{
 
 .wrap-links{
   display: flex;
-  margin-top: 64px;
+  margin: 0;
 }
 
 .footer-links{
@@ -286,4 +312,20 @@ strong{
 .promo-img{
   width: 440px;
   height: 440px;
+}
+.main-link{
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 13px;
+  color:white;
+  line-height: 15px;
+  background:#FF7500;
+  transition: opacity 0.4s ease ;
+  text-decoration: none;
+}
+
+.main-link:hover{
+  opacity: 60%;
 }
