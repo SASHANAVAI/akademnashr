@@ -1,9 +1,18 @@
-*{
+ /* custom property */
+:root{
+  --primary-color:#ff7500;
+}
+
+html{
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 
 body{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   font-family: "Roboto", "Arial", sans-serif;
   line-height: 24px;
   font-size: 16px;
@@ -24,7 +33,7 @@ body{
  /* HEADER  */
 
 header{
-  border-top: 5px solid #ff7500;
+  border-top: 5px solid var(--primary-color);
 }
 .header-container{
   display: flex;
@@ -67,7 +76,7 @@ header{
 }
 
 .nav-link:hover{
-  color: #ff7500;
+  color: var(--primary-color);
 
 }
 
@@ -117,7 +126,7 @@ header{
   margin: 0;
   margin-bottom: 40px;
   border: none;
-  background-color: #FF7500;
+  background-color:var(--primary-color);
 }
 
 
@@ -227,7 +236,7 @@ header{
 }
 
 strong{
-  color:#FF7500
+  color:var(--primary-color)
 }
 
 /*   FOOTER  */
@@ -271,7 +280,7 @@ strong{
 }
 
 .social-link:hover{
-  color: #ff7500;
+  color:var(--primary-color);
   transition: opacity 0.4s ease;
 }
 
@@ -307,7 +316,7 @@ strong{
 }
 
 .footer-links a:hover{
-  color: #ff7500;
+  color: var(--primary-color);
 }
 .promo-img{
   width: 440px;
@@ -321,7 +330,7 @@ strong{
   font-size: 13px;
   color:white;
   line-height: 15px;
-  background:#FF7500;
+  background:var(--primary-color);
   transition: opacity 0.4s ease ;
   text-decoration: none;
 }
